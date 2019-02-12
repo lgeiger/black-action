@@ -12,7 +12,7 @@ workflow "Example Workflow" {
 
 action "Lint" {
   uses = "lgeiger/black-action@master"
-  args = [".", "--check"]
+  args = ". --check"
 }
 ```
 
