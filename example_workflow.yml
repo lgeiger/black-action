@@ -1,0 +1,12 @@
+on: push
+name: Black Code Formatter
+jobs:
+  lint:
+    name: Black Code Formatter
+    runs-on: ubuntu-latest
+    steps:
+    - name: Black Code Formatter
+      uses: lgeiger/black-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BLACK_ARGS: "."
