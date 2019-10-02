@@ -11,8 +11,7 @@ echo "### Adding git remote..."
 git remote add origin https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
 echo "### git fetch..."
 git fetch
-echo "### Setting branch to $GITHUB_REF"
-BRANCH=$(basename $GITHUB_REF)
+BRANCH=${GITHUB_REF#*refs/heads/}
 echo "### Branch: $BRANCH"
 git checkout $BRANCH
 

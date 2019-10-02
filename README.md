@@ -20,6 +20,3 @@ For a full list of possible `args` checkout the [black docs](https://github.com/
 
 
 Code inspired by https://github.com/MarvinJWendt/run-node-formatter
-
-# TODO:
-- Action currently fails when branch contains a slash, e.g. dependabot/bump_test. There is a solution for this in the code by MarvinJWendt, so this should be implemented here as well.
