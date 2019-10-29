@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:3
 
 LABEL "com.github.actions.name"="Black Code Formatter"
 LABEL "com.github.actions.description"="Format Python code using black"
