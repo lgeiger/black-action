@@ -4,16 +4,20 @@ A GitHub action that runs [black code formatter](https://github.com/ambv/black) 
 
 ## Example Workflow
 
-```workflow
-workflow "Example Workflow" {
-  on = "push"
-  resolves = ["Lint"]
-}
+```yaml
+name: Code Quality Checks
 
-action "Lint" {
-  uses = "lgeiger/black-action@master"
-  args = ". --check"
-}
+on: [push]
+
+jobs:
+  black:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run Black
+      uses: lgeiger/black-action@master
+      with:
+        args: --check src/ tests/
 ```
 
 For a full list of possible `args` checkout the [black docs](https://github.com/ambv/black#command-line-options).
