@@ -1,0 +1,9 @@
+name: 'Black Code Formatter Action'
+description: 'Run Black Formatter commands'
+author: '@lgeiger'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'box'
+  color: 'blue'
