@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.8.6-buster
 
 LABEL "com.github.actions.name"="Black Code Formatter"
 LABEL "com.github.actions.description"="Format Python code using black"
