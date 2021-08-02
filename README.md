@@ -16,4 +16,4 @@ action "Lint" {
 }
 ```
 
-For a full list of possible `args` checkout the [black docs](https://github.com/ambv/black#command-line-options).
+For a full list of possible `args` checkout the [black docs](https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#command-line-options).
